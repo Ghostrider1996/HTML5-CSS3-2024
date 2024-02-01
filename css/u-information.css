@@ -1,0 +1,243 @@
+body {
+    font-size: medium;
+}
+
+/* SECTION STYLES START */
+.guild-rules-section,
+.guild-policies-section,
+.guild-staff-table-section,
+.guild-achievements-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+    padding: 3rem 0;
+}
+
+/* about section */
+.about-us-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+     padding: 3rem 0;
+}
+.about-section-text h2 {
+    margin: 1rem;
+}
+
+/* rules section */
+.guild-rules-section {
+    align-items: start;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.additional-rules-article:last-child {
+    position: relative;
+}
+
+.additional-rules-article:last-child::after {
+    content: url(/images/icons8-rules-100.png);
+    margin-top: 20rem;
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(4);
+}
+
+.additional-rules-article p,
+.rules-article p {
+    margin: 1rem 0 1rem 0;
+
+}
+/* policies */
+.guild-policies-section p {
+    margin: 1rem 0 1rem 0;
+}
+
+.guild-policies-section li {
+    margin-bottom: 3rem;
+}
+
+/* guild system section */
+.guild-systems-section {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.loot-system,
+.rank-system {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    padding: 1rem;
+}
+
+.loot-system .main-p, .rank-system .main-p {
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem 0;
+
+} 
+
+.loot-system p,
+.rank-system .initial-roles,
+.rank-system .member-roles,
+.rank-system .veteran-roles,
+.rank-system .officer-roles {
+    margin-bottom: 3rem;
+}
+
+.rank-system .sub-p {
+    margin: 1.2rem 0;
+}
+
+.quote::after {
+    content: url(/images/icons8-exclamation-mark-48.png);
+    display: inline-block; /* Ensure it's an inline element */
+    transform: translateX(10px); /* Adjust the positioning as needed */
+}
+
+.final-note {
+    position: relative;
+    display: flex;
+}
+
+.system-img img {
+    margin: 0 auto;
+    padding: 3rem;
+
+}
+
+/* LIST STYLES START */
+.guild-master-list,
+.leaders-list,
+.officers-list,
+.class-officers-list,
+.policy-ul,
+.achievements-list,
+.moderator-list {
+    list-style-type: none;
+    line-height: 1.5rem;
+    word-wrap: normal;
+    font-weight: 500;
+    font-size: smaller;
+    text-align: center;
+}
+
+.ul-title {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.future-ul,
+.onyxia-ul,
+.molten-core-ul {
+    display: flex;
+    flex-flow: column wrap;
+    width: max-content;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+}
+
+.onyxia-ul li::before,
+.molten-core-ul li::before {
+    content: url(/images/icons8-cross-48.png);
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(.5);
+}
+
+/* text styles */
+.info-secton-title {
+    margin-bottom: 1rem;
+}
+
+/* staff and achievements */
+.achievements-container {
+    display: flex;
+}
+
+.guild-staff-table-section .staff-container {
+    margin: 0 auto;
+}
+
+.staff-container,
+.achievements-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+   
+   justify-content: center;
+    gap: 2rem
+
+}
+
+.guild-master-container::before {
+    content: url(/images/icons8-major-general-48.png);
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(.6);
+}
+
+.chief-officers-container::before {
+    content: url(/images/icons8-captain-general-48.png);
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(.6);
+}
+
+.officers-container::before {
+    content: url(/images/icons8-captain-48.png);
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(.6);
+}
+
+.class-officers-container::before {
+    content: url(/images/icons8-lieutenant-48.png);
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(.6);
+}
+
+.moderators-container::before {
+    content: url(/images/icons8-comandante-48.png);
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(.5);
+}
+
+.management-list {
+    font-size: small;
+    text-align: center;
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+/* FIGURES AND TITLES STYLES START */
+h4 {
+    margin: 2rem 0 2.5rem 0;
+    font-size: 1.2rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+article {
+    width: 600px;
+    text-align: center;
+}

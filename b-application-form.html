@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JavaScript CODE -->
+
+  <!-- resposive roles selection -->
+  <script src="js-scripts/a-responsive-roles.js"></script>
+  <!-- resposive profession selection -->
+  <script src="js-scripts/a-responsive-profession.js"></script>
+  <!-- footer SVGs -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- JavaScript CODE -->
+
+  <!-- MAIN STYLES -->
+  <link rel="stylesheet" href="css/var-navbar-menus.css">
+  <link rel="stylesheet" href="css/var-main-style.css">
+  <link rel="stylesheet" href="css/var-footer.css">
+  <link rel="stylesheet" href="css/q-utility-color.css">
+  <link rel="stylesheet" href="css/q-utility-animations.css">
+  <link rel="icon" href="images/warcraft-icon-10.jpg" type="image/x-icon" />
+  <!-- MAIN STYLES -->
+
+  <!-- APPLICATION FORM SPECIFIC -->
+  <link rel="stylesheet" href="css/u-application-form.css">
+  <link rel="stylesheet" href="css/var-non-home-specific.css">
+  <title>TUS | Application</title>
+  <!-- APPLICATION FORM SPECIFIC -->
+</head>
+
+<body class="application-form">
+  <!-- HEADER SECTION STARTS -->
+  <header>
+    <nav class="navbar">
+      <ul class="fade-down animate animate--slow">
+        <li><a href="a-home.html" class="nav-a picture"  data-tooltip="Back to Home."><img src="images/warcraft-icon-10_2_100x100.jpg"
+              alt="home-picture" class="home-icon-link"></a></li>
+      </ul>
+    </nav>
+    <script src="js-scripts/reveventDefaut.js"></script>
+  </header>
+  <!-- HEADER SECTION ENDS -->
+
+
+  <!-- MAIN SECTION -->
+  <main class="application-form-main">
+
+    <!-- FIRST-LOGO -->
+    <!-- <div class="video fade-in-left animate animate--slow">
+      <iframe width="540" height="315" src="https://www.youtube.com/embed/33k0wYBeJv8?si=vhRg4kIXLwhrum-K"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+        <iframe width="540" height="315" src="https://www.youtube.com/embed/QDnsJnO-5O4?si=u8vGGzz8sVDJLgES"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div> -->
+    <!-- FIRST-LOGO -->
+
+
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+      <div class="form-container">
+        <div class="form-title">
+          <h1 class="title">Application Form</h1>
+        </div>
+
+        <form action="#" method="post">
+          <!-- APPLICANT DETAILS STARTS -->
+          <div class="applicant-details">
+            <div class="input-box character-name">
+              <span class="details">Character Name</span>
+              <input type="text" placeholder="Fallen" required id="character-name" maxlength="15">
+            </div>
+
+            <div class="input-box previous-guild">
+              <span class="details">Your previous guild on the realm</span>
+              <input type="text" placeholder="Hysteria - Wamane Onyxia" required id="previous-guild" maxlength="35">
+            </div>
+
+            <div class="input-box race-select">
+              <span class="details">Race</span>
+              <select name="race" id="race" disabled>
+                <option value="none" selected disabled>None</option>
+                <option value="Human">Human</option>
+                <option value="Dwarf">Dwarf</option>
+                <option value="Gnome">Gnome</option>
+                <option value="Night-Elf">Night-Elf</option>
+              </select>
+
+            </div>
+
+            <div class="input-box class-select">
+              <span class="details">Class</span>
+              <select name="class" id="class" disabled>
+                <option value="none" selected disabled>None</option>
+
+              </select>
+            </div>
+
+            <div class="input-box spec-select">
+              <span class="details">Spec</span>
+              <select name="spec" id="spec" disabled>
+                <option value="none" selected disabled>None</option>
+
+              </select>
+            </div>
+
+            <div class="input-box secondary-professions-select">
+              <span class="details">Secondary Profession</span>
+              <select name="main-professions" id="main-professions" disabled>
+                <option value="none" selected disabled>None</option>
+                <option value="havent-decided">Haven't decided yet</option>
+                <option value="fishing">Fishing</option>
+                <option value="cooking">Cooking</option>
+              </select>
+            </div>
+
+            <div class="input-box main-professions-select">
+              <span class="details">Primary Profession - #1</span>
+              <select name="main-professions" id="main-professions-1" disabled>
+                <option value="none" selected disabled>None</option>
+                <option value="havent-decided">Haven't decided yet</option>
+                <option value="blacksmithing">Blacksmithing</option>
+                <option value="engineering">Engineering</option>
+                <option value="mining">Mining</option>
+                <option value="enchanting">Enchanting</option>
+                <option value="tailoring">Tailoring</option>
+                <option value="leatherworking">Leatherworking</option>
+                <option value="skining">Skining</option>
+                <option value="alchemy">Alchemy</option>
+                <option value="herbalism">Herbalism</option>
+              </select>
+            </div>
+
+            <div class="input-box main-professions-select">
+              <span class="details">Primary Profession - #2</span>
+              <select name="main-professions" id="main-professions-2" disabled>
+                <option value="none" selected disabled>None</option>
+                <option value="havent-decided">Haven't decided yet</option>
+                <option value="blacksmithing">Blacksmithing</option>
+                <option value="engineering">Engineering</option>
+                <option value="mining">Mining</option>
+                <option value="enchanting">Enchanting</option>
+                <option value="tailoring">Tailoring</option>
+                <option value="leatherworking">Leatherworking</option>
+                <option value="skining">Skining</option>
+                <option value="alchemy">Alchemy</option>
+                <option value="herbalism">Herbalism</option>
+              </select>
+            </div>
+
+            <div class="input-box game-side-select">
+              <span class="details">Your favorite side of the game</span>
+              <select name="game-side" id="game-side" disabled>
+                <option value="none" selected disabled>None</option>
+                <option value="pvp">Player versus Player (PvP)</option>
+                <option value="pve">Player versus Environment (PvE)</option>
+                <option value="both">Both - PvE and PvP</option>
+              </select>
+            </div>
+
+            <div class="input-box playstyle-select">
+              <span class="details">Which playstyle suits you the most</span>
+              <select name="playstyle" id="playstyle" disabled>
+                <option value="none" selected disabled>None</option>
+                <option value="softcore">Softcore</option>
+                <option value="semi-hardcore">Semi-Hardcore</option>
+                <option value="hardcore">Hardcore</option>
+                <option value="extreme">Extreme</option>
+              </select>
+            </div>
+            <div class="input-box raid-days-select">
+              <span class="details">How many days could you raid</span>
+              <select name="raid-days" id="raid-days" disabled>
+                <option value="none" selected disabled>None</option>
+                <option value="not-sure">Not sure</option>
+                <option value="1-2">1-2</option>
+                <option value="2-3">2-3</option>
+                <option value="3++">3++</option>
+              </select>
+            </div>
+
+            <div class="input-box contribute">
+              <span class="details">My best contribute</span>
+              <input type="text" placeholder="I am very skilled with Protection Warrior" required disabled
+                id="contribute">
+            </div>
+
+            <div class="contribute">
+              <textarea name="additional-information" maxlength="600" id="additional-information" cols="93" rows="17"
+                class="additional-information"
+                placeholder="Additional information about you and your best contribute based on your personal opinion and experience."
+                disabled></textarea>
+            </div>
+            <div
+              class="counteradditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-informationadditional-information">
+              Number of characters left: <span class="counter">600</span></div>
+          </div>
+
+          <!-- PERSONAL DETAILS STARTS -->
+          <div class="personal-details">
+            <span class="gender-title">Gender</span>
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3" checked>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+
+            <div class="personal-input-box">
+              <div class="input-box">
+                <span class="details">Enter birth date</span>
+                <input type="date" placeholder="Fallen" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Favorite Off-Topic</span>
+                <select name="off-topic" id="off-topic">
+                  <option value="none">None</option>
+                  <optgroup label="Sport">
+                    <option value="fitnes">Fitness</option>
+                    <option value="martial-arts">Martial Arts</option>
+                    <option value="football">Football</option>
+                    <option value="e-sport">E-Sport</option>
+                  </optgroup>
+                  <optgroup label="Programing">
+                    <option value="java-script">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="html-css">HTML5 & CSS3</option>
+                  </optgroup>
+                  <optgroup label="Financial Markets">
+                    <option value="Cryptocurrencies">Cryptocurrencies</option>
+                    <option value="Equity Shares">Equity Shares</option>
+                    <option value="Obligations">Obligations</option>
+                    <option value="ETFs">ETFs</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- AGREEMENT-BOX STARTS -->
+          <div class="agreement-container">
+            <div class="agreement-box">
+              <p class="agreement-p">Confirmation Agreement</p>
+              <input type="radio" name="agreement" id="dot-4" required>
+              <label for="dot-4" class="confirmation">
+                <div class="dot four"></div>
+                <span class="confirmation-agreement"><a href="information.html#general-rules" class="link"
+                    target="_blank">Our
+                    general rules</a>,
+                  <a href="information.html#gladiator-rules" class="link" target="_blank">TUS Gladiator rules</a>, <a
+                    href="information.html#policies" class="link" target="_blank">Guild Policies</a>, <a
+                    href="information.html#systems" class="link" target="_blank">Guild
+                    Systems.</a></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- BUTTON STARTS -->
+          <div class="button">
+            <input type="submit" name="apply" value="Apply">
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FIRST-LOGO -->
+    <!-- <div class="video fade-in-right animate animate--slow">
+      <iframe width="540" height="315" src="https://www.youtube.com/embed/33k0wYBeJv8?si=vhRg4kIXLwhrum-K"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+        <iframe width="540" height="315" src="https://www.youtube.com/embed/QDnsJnO-5O4?si=u8vGGzz8sVDJLgES"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div> -->
+    <!-- FIRST-LOGO -->
+
+  </main>
+
+  <!-- FOOTER SECTION STARTS -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content-container">
+        <div class="company">
+          <p class="footer-title title">Author</p>
+          <ul class="company-list">
+            <li><a href="information.html" class="link">About</a></li>
+            <li><a href="#" class="link">Portfolio</a></li>
+            <li><a href="#" class="link">Projects</a></li>
+            <li><a href="mailto:yexs1996@gmail.com" class="link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="resourses">
+          <p class="footer-title title">Resourses</p>
+          <ul class="resourses-list">
+            <li><a href="/forum-pages/h-g-classic.html" class="link" class="link">Vanilla Addons</a></li>
+            <li><a href="/forum-pages/h-tbc.html" class="link">TBC Addons</a></li>
+            <li><a href="/forum-pages/h-wotlk.html" class="link">WotLK Addons</a></li>
+            <li><a href="/forum-pages/h-forum-addons-and-macros.html" class="link">Useful Macros</a></li>
+          </ul>
+        </div>
+
+        <div class="other-stuff">
+          <p class="footer-title title">Guild Partnerships</p>
+          <ul class="other-stuff-list">
+            <li><a href="#" class="link">None yet</a></li>
+            <li><a href="#" class="link">None yet</a></li>
+            <li><a href="#" class="link">None yet</a></li>
+            <li><a href="/forum-rules-pages/f-partnership-program.html" class="link">Partnership Programme</a></li>
+          </ul>
+        </div>
+
+        <div class="terms">
+          <p class="footer-title title">Terms</p>
+          <ul class="terms-list">
+            <li><a href="/forum-rules-pages/a-rules.html" class="link">General Rules</a></li>
+            <li><a href="forum-rules-pages/c-loot-system.html" class="link">Loot System</a></li>
+            <li><a href="forum-rules-pages/b-rank-system.html" class="link">Rank System</a></li>
+            <li><a href="forum-rules-pages/d-guild-bank-policy.html" class="link">Guild Bank Policy</a></li>
+
+          </ul>
+        </div>
+
+        <div class="socials">
+          <p class="footer-title media-and-socials title">Media &#38; Socials</p>
+          <ul class="socials-list">
+            <li class="facebook">
+              <a href="https://www.facebook.com/" target="_blank"
+                title="&lt;The Usual Suspects&gt; - Official Facebook Page"><ion-icon name="logo-twitch"
+                  class="fa-twitch"></ion-icon></a>
+            </li>
+
+            <li class="youtube">
+              <a href="https://www.youtube.com/channel/UC6iXZ9GeT3azaU7qs3WAaGA" target="_blank"
+                title="&lt;The Usual Suspects&gt; - Official YouTube Channel"><ion-icon name="logo-youtube"
+                  class="fa-youtube"></ion-icon></a>
+            </li>
+
+            <li class="discord">
+              <a href="https://discord.gg/WtaRj4ND5J" target="_blank"
+                title="&lt;The Usual Suspects&gt; - Official Discord Server"><ion-icon name="logo-discord"
+                  class="fa-discord"></ion-icon></a>
+            </li>
+
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/" target="_blank" title="Author"><ion-icon name="logo-linkedin"
+                  class="fa-linkedin"></ion-icon></a>
+            </li>
+
+            <li class="github">
+              <a href="#" target="_blank"><ion-icon name="logo-github" class="fa-github"></ion-icon></a>
+            </li>
+
+        </div>
+
+      </div>
+    </div>
+    <p class="copyright title">
+      Copyright &#169; The Usual Suspects&#8482; 2023. designed by Fallen</p>
+  </footer>
+
+  <!-- JavaScript related to application form -->
+  <script src="js-scripts/a-responsive-roles.js"> </script>
+</body>
+
+</html>

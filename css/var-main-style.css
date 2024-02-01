@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* main style + reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 1; 
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.intro-title {
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .intro-text {
+    opacity: 0.8;
+    line-height: 1.5rem;
+  }
+  
+  
+  .paragraph-title {
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  .management p{
+    font-style: italic;
+  }
+  
+  .message,
+  .news-section-title,
+  .mid-content {
+      text-align: center;
+      font-weight: 300;
+  }
+  
+  h2 {
+    padding: 1rem;
+    text-align: center;
+    /* font-style: italic; */
+  }

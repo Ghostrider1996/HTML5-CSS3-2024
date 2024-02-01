@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    width: auto;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+main {
+    min-width: 99%;
+    flex: 4;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+    border-style: double;
+    border-color: grey;
+    margin-right: 1rem;
+    margin: 0 auto 1rem;
+}
+
+

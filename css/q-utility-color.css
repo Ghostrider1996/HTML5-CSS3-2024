@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  /* GENERAL COLOR VARAIBLES */
+  /* GENERAL COLOR VARAIBLES */
+  /* GENERAL COLOR VARAIBLES */
+  --BGCOLOR: hsl(0, 0%, 0%);
+  --TRANSPARENT: transparent;
+  --ITEM-BGCOLOR: rgba(82, 83, 84, 0.3);
+  --TEXT-MAIN-COLOR: rgb(181, 148, 16);
+  --WHITE-TEXT: whitesmoke;
+  --HOVER-DEFAUT-COLOR: rgb(248, 205, 31);
+  --GREEN-TEXT: rgb(17, 223, 17);
+  --MAIN-BORDER-COLOR: linear-gradient(135deg, #b59410, rgb(19, 105, 227));
+  --CUSTOM-SECTION-BGCOLOR: linear-gradient(
+    360deg,
+    rgb(0, 0, 0),
+    rgba(82, 83, 84, 0.3),
+    rgb(0, 0, 0)
+  );
+  --FILLTER: rgb(12, 12, 12);
+  --TRASPARENT-ORANGE: rgba(141, 119, 11, 0.3);
+  --TRANSPARENT-BLUE: rgba(4, 23, 59, 0.7);
+  /* WORLD OF WARCRAFT HERO CLASS COLORS */
+  --WARLOCK-COLOR: #8788ee;
+  --MAGE-COLOR: #69ccf0;
+  --HUNTER-COLOR: #aad372;
+  --WARRIOR-COLOR: #c69b6d;
+  --DRUID-COLOR: #ff7c0a;
+  --PALADIN-COLOR: #f58cba;
+  --ROGUE-COLOR: #fff569;
+  --PRIEST-COLOR: #ffff;
+
+  /* STAFF COLORS */
+  --GUILD-MASTER-COLOR: rgb(165, 6, 6);
+  --CHIEF-OFFICER-COLOR: rgb(157, 6, 6);
+  --OFFICER-COLOR: orange;
+  --VETERAN-COLOR: rgb(179, 179, 246);
+  --MEMBER-COLOR: rgb(16, 167, 109);
+  --INITIAL-COLOR: var(--GREEN-TEXT);
+
+  /* STAFF / LEADERS CARDS COLORS */
+  --GUILD-LEADER-CARD: conic-gradient(#69ccf0, transparent, #c69b6d);
+  --CHIEF-OFFICER-CARD: rgba(165, 6, 6, 0.5);
+  --OFFICER-CARD: rgba(255, 165, 0, 0.5);
+  --WARLOCK-CLASS-OFFICER-CARD: rgba(135, 136, 238, 0.5);
+  --MAGE-CLASS-OFFICER-CARD: rgba(105, 204, 240, 0.5);
+  --HUNTER-CLASS-OFFICER-CARD: rgba(170, 211, 114, 0.7);
+  --WARRIOR-CLASS-OFFICER-CARD: rgba(198, 155, 109, 0.5);
+  --DRUID-CLASS-OFFICER-CARD: rgba(255, 124, 10, 0.5);
+  --PALADIN-CLASS-OFFICER-CARD: rgba(245, 140, 186, 0.5);
+  --ROGUE-CLASS-OFFICER-CARD: rgba(255, 245, 105, 0.6);
+  --PRIEST-CLASS-OFFICER-CARD: rgba(255, 255, 255, 0.5);
+
+  /* LINK AND MEDIA COLORS */
+  --LINK-COLOR: rgb(19, 105, 227);
+  --DISCORD-HOVER-COLOR: RGB(88, 101, 242);
+  --FACEBOOK-HOVER-COLOR: rgb(66, 103, 178);
+  --YOUTUBE-HOVER-COLOR: rgb(255, 0, 0);
+  --GITHUB-HOVER-COLOR: RGB(201, 81, 12);
+  --TWITCH-HOVER-COLOR: RGB(185, 163, 227);
+
+  /* LIST ITEMS COLORS */
+  --LIST-ITEMS-COLOR: #ffffff;
+
+  /* HR COLORS */
+  --HR-COLOT: conic-gradient(rgb(19, 105, 227), transparent, rgb(19, 105, 227));
+}
+
+/* utility psudo elements */
+.cross::before,
+.cross:after {
+  content: url(/images/icons8-cross-48.png);
+  display: inline-block;
+  vertical-align: middle;
+  transform: scale(0.4);
+  margin-top: 0.15rem;
+}
+
+/* utility decoration classes */
+.line-through {
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.normal {
+  font-size: 1.1rem;
+}
+
+.emphasis {
+  font-size: 1.2;
+}
+
+.mediam {
+  margin: 4rem 0 4rem 0;
+  font-size: 1.2rem;
+}
+
+.large {
+  font-size: 2rem;
+}
+
+.active-1 {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.active-2 {
+  display: block;
+}
+
+.show {
+  display: block;
+  right: 0;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* text utility classes  */
+#title,
+.title {
+  color: var(--TEXT-MAIN-COLOR);
+}
+
+.white-text {
+  color: var(--LIST-ITEMS-COLOR);
+}
+
+.red-text {
+  color: rgb(137, 11, 11);
+  font-size: 1.2rem;
+}
+
+.green-text {
+  color: var(--GREEN-TEXT);
+}
+
+li {
+  color: var(--LIST-ITEMS-COLOR);
+}
+
+/* General color styles */
+body {
+  background-color: var(--BGCOLOR);
+  color: var(--LIST-ITEMS-COLOR);
+}
+
+header {
+  background-color: var(--ITEM-BGCOLOR);
+}
+
+.home-icon-link {
+  border: 1px solid var(--TEXT-MAIN-COLOR);
+  border-radius: 5rem;
+}
+
+footer {
+  background-color: var(--ITEM-BGCOLOR);
+  font-size: 1rem;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* World of Warcraft utility color classes*/
+.warlock {
+  color: var(--WARLOCK-COLOR);
+}
+
+.mage {
+  color: var(--MAGE-COLOR);
+}
+
+.hunter {
+  color: var(--HUNTER-COLOR);
+}
+
+.warrior {
+  color: var(--WARRIOR-COLOR);
+}
+
+.druid {
+  color: var(--DRUID-COLOR);
+}
+
+.paladin {
+  color: var(--PALADIN-COLOR);
+}
+
+.rogue {
+  color: var(--ROGUE-COLOR);
+}
+
+.priest {
+  color: var(--PRIEST-COLOR);
+}
+
+.guild-master {
+  color: var(--GUILD-MASTER-COLOR);
+}
+
+.chief-officer {
+  color: var(--CHIEF-OFFICER-COLOR);
+}
+
+.officer {
+  color: var(--OFFICER-COLOR);
+}
+
+.veteran {
+  color: var(--VETERAN-COLOR);
+}
+
+.member {
+  color: var(--MEMBER-COLOR);
+}
+
+.initial {
+  color: var(--INITIAL-COLOR);
+}
+
+/* GENERAL COLOR VARAIBLES ENDS */
+/* GENERAL COLOR VARAIBLES ENDS */
+/* GENERAL COLOR VARAIBLES ENDS */
+
+/* NAV-BAR-COLOR-STYLES */
+.dropdown-content {
+  background-color: var(--BGCOLOR);
+  color: var(--TEXT-MAIN-COLOR);
+}
+
+.dropdown-content a:hover {
+  background-color: var(--ITEM-BGCOLOR);
+  color: var(--LINK-COLOR);
+}
+
+header nav:has(a, a:visited, .nav-a) {
+  color: var(--TEXT-MAIN-COLOR);
+}
+
+.button-one {
+  background-color: var(--TRANSPARENT);
+}
+
+.mobile-dropdown-nav {
+  background: var(--MAIN-BORDER-COLOR);
+}
+
+/* :hover and :focus color effects */
+/* mobile-nav-bar */
+.mobile-dropdown-nav .mobile-dropdown .item:hover,
+.mobile-dropdown button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--TEXT-MAIN-COLOR);
+}
+
+/* Add a background color to navbar links on hover */
+.navbar li a:hover,
+.navbar button:hover {
+  color: var(--HOVER-DEFAUT-COLOR);
+  transition: 0.3s;
+}
+
+.fa-twitch:hover {
+  color: var(--TWITCH-HOVER-COLOR);
+  transition: 0.8s;
+}
+
+.fa-linkedin:hover {
+  color: var(--FACEBOOK-HOVER-COLOR);
+  transition: 0.8s;
+}
+
+.fa-youtube:hover {
+  color: var(--YOUTUBE-HOVER-COLOR);
+  transition: 0.8s;
+}
+
+.fa-discord:hover {
+  color: var(--DISCORD-HOVER-COLOR);
+  transition: 0.8s;
+}
+
+.fa-github:hover {
+  color: var(--GITHUB-HOVER-COLOR);
+  transition: 0.8s;
+}
+
+.fa-top:hover {
+  background-color: #707070ac;
+  color: var(--TEXT-MAIN-COLOR);
+  transition: 0.3s;
+}
+
+.fa-top:active {
+  background-color: #7070705d;
+  color: red;
+}
+
+iframe:hover {
+  border-color: var(--LINK-COLOR);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+footer li:hover {
+  transition: 2s;
+}
+
+.application a:hover {
+  color: var(--LINK-COLOR);
+  transition: 0.4s;
+}
+
+/* recruitment page */
+.dps .buttons button,
+.tank .buttons button,
+.healer .buttons button,
+.leadership .buttons button {
+  background: var(--MAIN-BORDER-COLOR);
+  color: var(--WHITE-TEXT);
+}
+
+.discord-apply {
+  color: var(--DISCORD-HOVER-COLOR);
+}
+
+.link:hover {
+  color: var(--LINK-COLOR);
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.project-section iframe:hover,
+.video-section iframe:hover {
+  box-shadow: 0 0 4rem steelblue;
+}
+
+/* forum */
+.topic-title:hover {
+  color: var(--LINK-COLOR);
+}
+
+/* HOME PAGE COLOR STYLES */
+/* background video */
+.main-picture {
+  border: 5px double var(--TEXT-MAIN-COLOR);
+}
+
+.contrast {
+  background-image: linear-gradient(to top, hsl(0, 0%, 0%), rgba(0, 0, 0, 0.2));
+}
+
+.add-container {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.first-span {
+  padding-right: 1rem;
+  border-right: 5px solid var(--TEXT-MAIN-COLOR);
+  /* add middle border size */
+}
+
+.moderators,
+.organizers {
+  background-color: rgba(181, 148, 16, 0.18);
+  border-left: 8px solid rgba(181, 148, 16, 0.4);
+  border-top: 3px solid rgba(181, 148, 16, 0.4);
+  border-bottom: 1px solid rgba(181, 148, 16, 0.4);
+  border-right: 1px solid rgba(181, 148, 16, 0.4);
+}
+
+.main-picture {
+  border-color: var(--TEXT-MAIN-COLOR);
+}
+
+/* middle-section */
+.achievements-link h2 {
+  text-align: left;
+  padding-left: 10%;
+  z-index: 100;
+}
+
+.middle-section-container .achievements,
+.middle-section-container .management,
+.carousell {
+  background-color: rgba(82, 83, 84, 0.3);
+  box-shadow: 0 0 1rem rgba(181, 148, 16, 0.5);
+}
+
+.carousell .navigation .caro-btn {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousell .navigation .caro-btn.active {
+  background-color: var(--TEXT-MAIN-COLOR);
+}
+
+.carousell .slide .caro-text .caro-title-p {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* SVG section */
+.svg-section::after,
+.svg-section::before {
+  background-image: var(--MAIN-BORDER-COLOR);
+}
+
+iframe {
+  z-index: 2;
+  border: 2px solid var(--TEXT-MAIN-COLOR);
+}
+
+.video-section {
+  background-image: var(--FILLTER);
+}
+
+.project-section iframe,
+.video-section iframe {
+  box-shadow: 0 0 2rem rgba(181, 148, 16, 0.4);
+}
+
+/* project section */
+.background-image::before,
+.management::before,
+.achievements::before {
+  background-image: linear-gradient(
+    to top,
+    hsl(0, 0%, 0%),
+    rgba(0, 0, 0, 0.2),
+    hsl(0, 0%, 0%)
+  );
+  z-index: 10;
+}
+
+/* LEADERS PAGE COLOR STYLES STARTS */
+aside {
+  background-color: rgb(39, 37, 37);
+  box-shadow: 0 0px 5px 1px var(--BGCOLOR);
+}
+
+.leaders-section,
+.officers-section,
+.class-officer-box,
+.moderators-section {
+  background-image: var(--CUSTOM-SECTION-BGCOLOR);
+}
+
+.card {
+  border: 5px solid var(--TEXT-MAIN-COLOR);
+}
+
+.card img {
+  border: 5px solid var(--TEXT-MAIN-COLOR);
+}
+
+.personal-information button.armory {
+  background-image: linear-gradient(
+    180deg,
+    rgb(27, 19, 16),
+    rgb(49, 36, 31),
+    rgb(123, 95, 82)
+  );
+  color: var(--WHITE-TEXT);
+}
+
+.personal-information button.battlenet {
+  background-color: rgb(0, 118, 214);
+  color: rgb(10, 39, 158);
+}
+
+.personal-information button a span {
+  color: rgb(14, 14, 175);
+}
+
+#guild-leader {
+  background-image: var(--GUILD-LEADER-CARD);
+}
+
+#chief-executive-officer,
+#chief-financial-officer,
+#head-moderator {
+  background-color: var(--CHIEF-OFFICER-CARD);
+}
+
+#raid-leader-softcore,
+#raid-leader-hardcore,
+#pvp-leader-softcore,
+#pvp-leader-hardcore {
+  background-color: var(--OFFICER-CARD);
+}
+
+#warrior-class-officer {
+  background-color: var(--WARRIOR-CLASS-OFFICER-CARD);
+}
+
+#paladin-class-officer {
+  background-color: var(--PALADIN-CLASS-OFFICER-CARD);
+}
+
+#rogue-class-officer {
+  background-color: var(--ROGUE-CLASS-OFFICER-CARD);
+}
+
+#druid-class-officer {
+  background-color: var(--DRUID-CLASS-OFFICER-CARD);
+}
+
+#warlock-class-officer {
+  background-color: var(--WARLOCK-CLASS-OFFICER-CARD);
+}
+
+#mage-class-officer {
+  background-color: var(--MAGE-CLASS-OFFICER-CARD);
+}
+
+#hunter-class-officer {
+  background-color: var(--HUNTER-CLASS-OFFICER-CARD);
+}
+
+#priest-class-officer {
+  background-color: var(--PRIEST-CLASS-OFFICER-CARD);
+}
+
+/* RECRUITMENT PAGE COLOR STYLES STARTS */
+.dps,
+.tank,
+.healer,
+.leadership {
+  box-shadow: 0 0 1rem rgba(181, 148, 16, 0.5);
+}
+
+.dps .buttons button,
+.tank .buttons button,
+.healer .buttons button,
+.leadership .buttons button {
+  background-image: linear-gradient(135deg, #b59410, rgb(19, 105, 227));
+  color: var(--WHITE-TEXT);
+}
+
+.dps .buttons button:hover,
+.tank .buttons button:hover,
+.healer .buttons button:hover,
+.leadership .buttons button:hover {
+  background-image: linear-gradient(-135deg, #b59410, rgb(19, 105, 227));
+  color: var(--WHITE-TEXT);
+}
+
+/* INFORMATION PAGE COLOR STYLE STARTS */
+.about-us-section {
+  background-color: var(--TRANSPARENT-BLUE);
+  color: var(--LINK-COLOR);
+}
+
+.rules-and-policies-section {
+  background-color: rgba(4, 23, 59, 0.5);
+}
+
+.guild-achievements-section,
+.guild-staff-table-section {
+  background-color: var(--TRASPARENT-ORANGE);
+}
+
+.guild-achievements-section {
+  background-color: var(--TRANSPARENT-BLUE);
+}
+
+main h2,
+main p {
+  color: whitesmoke;
+}
+
+.leaders-section,
+.officers-section,
+.class-officer-box,
+.moderators-section {
+  background-color: var(--ITEM-BGCOLOR);
+}
+
+.troublemaker {
+  color: rgb(188, 182, 182);
+}
+
+/* APPLICATION PAGE COLOR STYLES STARTS */
+.application-form-main {
+  background-image: var(--CUSTOM-SECTION-BGCOLOR);
+  color: #707070;
+}
+
+.form-container {
+  background-color: rgb(44, 43, 43);
+  border: 2px solid black;
+  box-shadow: 0 0 5px var(--TEXT-MAIN-COLOR);
+}
+
+.form-container .form-title::before {
+  background-image: linear-gradient(135deg, #b59410, rgb(19, 105, 227));
+}
+
+form :where(.input-box input, select) {
+  border: 2px solid #b4b0b0;
+}
+
+form textarea {
+  border-bottom: 20px solid grey;
+  border-left: 5px solid grey;
+  border-right: 5px solid grey;
+  border-top: 2px solid grey;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  background-color: inherit;
+  color: grey;
+  box-shadow: 0 0 15px black;
+  transition: 0.5s;
+}
+
+form textarea:focus {
+  border-color: var(--TEXT-MAIN-COLOR);
+}
+
+.contribute input::placeholder,
+.additional-information::placeholder {
+  color: rgb(185, 179, 179);
+}
+
+.applicant-details .input-box .details,
+form .personal-details .gender-title,
+form .personal-details .gender,
+.personal-details .personal-input-box {
+  color: var(--TEXT-MAIN-COLOR);
+}
+
+.applicant-details :where(input:focus, select:focus),
+.personal-details :where(input:focus, select:focus),
+textarea :where(:focus, :valid) {
+  border-color: var(--TEXT-MAIN-COLOR);
+}
+
+form .personal-details .category .dot,
+form .agreement-box .category .dot,
+form .agreement-container .agreement-box .dot {
+  background-color: #d9d9d9;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three,
+#dot-4:checked ~ label .four {
+  border-color: #d9d9d9;
+  background-color: var(--TEXT-MAIN-COLOR);
+}
+
+form .button input {
+  color: whitesmoke;
+  background-image: linear-gradient(135deg, #b59410, rgb(19, 105, 227));
+}
+
+form .button input:hover {
+  background-image: linear-gradient(-135deg, #b59410, rgb(19, 105, 227));
+}
+
+.agreement-p {
+  color: var(--TEXT-MAIN-COLOR);
+}
+
+/* fiexed items */
+.fa-top {
+  border-radius: 50%;
+  background-color: #70707088;
+  color: white;
+}
+
+/* forum specific colors*/
