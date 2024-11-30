@@ -1,0 +1,18 @@
+
+
+.ordered-list-style-roman {
+    list-style-type: upper-roman;
+}
+
+.ordered-list-style-alphabetical {
+    list-style-type: lower-alpha;
+}
+
+
+.unordered-list-style {
+    list-style-type:disc;
+}
+
+.unordered-list-style-2 {
+    list-style-type:circle;
+}
